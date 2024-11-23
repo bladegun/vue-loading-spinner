@@ -56,7 +56,7 @@ export default {
       animation: diamonds $duration $timing infinite;
       @for $i from 1 through 4 {
         &:nth-child(#{$i}) {
-          animation-delay: -($duration / 1.5) * $i;
+          animation-delay: -(calc($duration / 1.5)) * $i;
         }
       }
     }
